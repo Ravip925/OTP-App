@@ -194,6 +194,7 @@ const Home = () => {
     setOtp(otp);
   };
 
+  //function to handle button click
   const handleSubmit = () => {
     if (!otp) {
       alert("Please enter otp");
@@ -202,13 +203,17 @@ const Home = () => {
     }
     console.log("Otp Submitted:", otp);
   };
+
   return (
     <Container>
       <Wrapper>
+        {/* left side ui container*/}
         <Left>
+          {/* top div to handle logo */}
           <Top>
             <Logo src="https://i.ibb.co/Dt0gr63/LOGO.png" alt="logo"></Logo>
           </Top>
+          {/* center div container to wrap title, otp inputs and button */}
           <Center>
             <Title>
               <p>Verification</p>
@@ -245,6 +250,7 @@ const Home = () => {
             <p>Go back to home</p>
           </Bottom>
         </Left>
+        {/* Right side ui of the page*/}
         <Right>
           <SideImage>
             <TopBar>
